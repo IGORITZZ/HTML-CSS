@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- A TABELA TEM INICIO AQUI -->
     <table>
         <caption>BOLETIM</caption>
         <!-- INCIO CABEÇALHO -->
@@ -24,14 +25,18 @@
             <tr>
                 <!-- outro cabeçalho <tr> em separado, para cria uma seguinda linha -->
                 <!--  outro <tr> para criar mais uma linha -->
+                    <!-- Parte 2 dividida do header principal -->
                 <th>NOTA 1</th>
                 <th>NOTA 2</th>
             </tr>
             <!-- FINAL CABEÇALHO -->
         </thead>
+        <!-- INICIO CORPO DA TABELA -->
         <tbody>
             <tr>
+                <!-- INCIO PRIMEIRA PARTE DO BOLETIM -->
                 <th rowspan="5" scope="rowgroup">EXATAS</th>
+                <!-- por mais que esteja ocupando 4 linhas, somente aceitou com 5. Deve ser pelo fato de usarmos dois <tr> no <theader> -->
             </tr>
             <tr>
                 <th scope="row" class="materia">MATEMÁTICA</th>
@@ -59,11 +64,14 @@
             </tr>
             <tr>
                 <thead>
+                    <!-- MEDIA EXATAS -->
                     <th colspan="4" scope="row" class="media">MÉDIAS EXATAS</th>
                     <td class="nota_media">0.0</td>
                 </thead>
+                <!-- FIM DA PRIMEIRA PARTE DO BOLETIM -->
             </tr>
             <tr>
+                <!-- INICIO DA SEGUNDA PARTE DO BOLETIM -->
                 <th rowspan="3" scope="rowgroup">HUMANAS</th>
             </tr>
             <tr>
@@ -83,9 +91,12 @@
                     <th colspan="4" scope="row" class="media">MÉDIAS HUMANAS</th>
                     <td class="nota_media">0.0</td>
                 </thead>
+                <!-- FIM DA SEGUNDA PARTE DO BOLETIM -->
             </tr>
         </tbody>
+        <!-- FINAL DO CORPO DA TABELA -->
     </table>
+    <!-- A TABELA ACABA AQUI -->
 </body>
 
 </html>
