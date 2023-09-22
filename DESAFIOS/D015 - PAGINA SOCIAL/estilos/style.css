@@ -60,7 +60,7 @@ main{
     /* cria uma borda ao passar o mouse em cima do link */
     transform: translate(-2px, -3px);
     /* transform: translate, não serve somente para centralizar objetos, mas para movimentalos com mais liberdade pela tela */
-    box-shadow: 5pc 5px 10px rgba(0, 0, 0, 0.628);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.628);
     /* cira-se uma sombra */
     transition: transform .4s;
     /* toda a mudança que ocorre com o elemento, vai passar por uma breve animaçao */
