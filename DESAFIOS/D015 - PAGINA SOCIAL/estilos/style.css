@@ -33,13 +33,16 @@ main{
 }
 #tela{
     position: relative;
+    /* poscionamentor elatiovo ao elemento acima */
     top: 80px;
     left: 22px;
     width: 265px;
     height: 469px;
+    /* declarações feitas de forma manual para alinhar o elemento ao tamnho da tela */
 }
 #redes-sociais{
     text-align: right;
+    /* alinho o texto a direta, assim os icones vão ficar à direita da pagina */
 }
 #redes-sociais > a > img {
     width: 50px;
