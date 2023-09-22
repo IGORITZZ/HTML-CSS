@@ -45,14 +45,21 @@ main{
     width: 50px;
     margin: 10px;
     border-radius: 50%;
+    /* imagens que são completamente quadras se tornam redondas apenas com essa declaração */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.300);
     box-sizing: border-box;
+    /* não foi muito bem explicado, mas ao colocar uma borda quadno passamos os mouse, gera um espaçamento desnecessário entre os objetos como se a borda fosse um item a mais
+    box-sizing: border-box;, declarar dessa forma faz parecer que esta tudo no mesmo "box" */
 }
-
 #redes-sociais > a > img:hover{
     padding: 2px;
     border: 2px solid rgba(255, 255, 255, 0.612);
+    /* cria uma borda ao passar o mouse em cima do link */
     transform: translate(-2px, -3px);
+    /* transform: translate, não serve somente para centralizar objetos, mas para movimentalos com mais liberdade pela tela */
     box-shadow: 5pc 5px 10px rgba(0, 0, 0, 0.628);
+    /* cira-se uma sombra */
     transition: transform .4s;
+    /* toda a mudança que ocorre com o elemento, vai passar por uma breve animaçao */
+    /* declaramos alem do termo a propriedade transform, para que a animação não perca o posicionamento original/final, não declarar isso deixa a animação estranha */
 }
