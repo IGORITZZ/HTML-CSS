@@ -15,6 +15,8 @@
             <p>
                 <label for="iano"> Em que ano você nasceu?
                     <input type="number" name="ano" id="iano" min="1970" max="2023" oninput="calcIano()">
+                    <!-- aqui o  oninput esta inserido num conceito direfrente pois ele recebe uma função, uma aspecto que tem que ser muito mais desenvolvisdo e mais complexo. -->
+                    <!-- ao inves de escrevermos isso na linha do código vamos separa isso para que fique mais limpo, ainda mais que nesse caso esta rodando um duplo comando, e não um comando de uma linha só -->
                 </label>
             </p>
             <p>
@@ -31,7 +33,10 @@
     <script>
         function calcIano() {
             let atual = new Date().getUTCFullYear()
+            // let (indica variavel) atual (variavel = armazenma valor) = (vai receber) new Date().getUTCFullYear() (uma nova data, mas ira buscar somente pelo ano)
             iidade.innerHTML = Number(atual) - Number(iano.value)
+            // iidade.innerHTML (o valor HTML em iidade) = (vai receber) Number(atual) o valor numerico da variável menos Number(iano.value) o valor do iano
+            // para assim alterar valores
         }
     </script>
 </body>
