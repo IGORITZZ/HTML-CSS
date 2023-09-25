@@ -14,6 +14,13 @@
                 <label for="in1"> Numero
                     <input type="number" name="n1" id="in1" min="0" max="10" required value="0"
                         oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                        <!-- O conceito de oninput, é usado de uma melhor forma com JavaScript, mas vamos entender um pouco-->
+                        <!-- 
+                            isoma.innerHTML tudo que estiver dentro do HTML correspondente ao isoma
+                            = vai receber 
+                            Number(in1.value) + Number(in2.value) o valor(value) in1 + o valor (value) in2
+                            assim toda vez que aumentarmos e diminuirmois o valor de in1 ou in2 sera feito uma soma, e o resultado sera automaticamente inserido no que corresponder ao "isoma"
+                         -->
                 </label>
             </p>
             <p>
