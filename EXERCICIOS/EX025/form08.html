@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,44 +12,37 @@
         <fieldset>
             <p>
                 <label for="in1"> Numero
-                    <input type="number" name="n1" id="in1" min="0" max="10" required value="0" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                    <input type="number" name="n1" id="in1" min="0" max="10" required value="0"
+                        oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                        <!-- O conceito de oninput, é usado de uma melhor forma com JavaScript, mas vamos entender um pouco-->
+                        <!-- 
+                            isoma.innerHTML tudo que estiver dentro do HTML correspondente ao isoma
+                            = vai receber 
+                            Number(in1.value) + Number(in2.value) o valor(value) in1 + o valor (value) in2
+                            assim toda vez que aumentarmos e diminuirmois o valor de in1 ou in2 sera feito uma soma, e o resultado sera automaticamente inserido no que corresponder ao "isoma"
+                         -->
                 </label>
             </p>
             <p>
-                <label for="in2">  Numero
-                    <input type="number" name="n2" id="in2" min="0" max="10" required value="0" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                <label for="in2"> Numero
+                    <input type="number" name="n2" id="in2" min="0" max="10" required value="0"
+                        oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
                 </label>
             </p>
             <p>
                 <label for="isoma"> Total:
                     <output name="soma" id="isoma">0</output>
+                    <!-- output serve para inserir a saida do oninput -->
+                    <!-- sendo assim o oninput serve como a entrada dos dados e output é a saida (resultado) da operação, ou ação -->
                 </label>
             </p>
             <p>
-                <label for="inum"> Numero: 
-                    <input type="range" name="num" id="inum"min="0" max="10" value="5" 
-                    oninput="ival.innerHTML = Number(inum.value)">
-                    <output id="ival">5</output>
-                </label>
-            </p>
-            
-        </fieldset>
-        <fieldset>
-            <p>
-                <label for="iano"> Em que ano você nasceu?
-                    <input type="number" name="ano" id="iano" min="1970" max="2023" oninput="calcIano()">
-                </label>
-            </p>
-            <p>
-                <label for="iidade">Sua idade é: </label>
-                <output id="iidade">0</output>
+                <input type="submit" value="Eviar">
+                <input type="reset" value="Apagar">
             </p>
         </fieldset>
-        <p>
-            <input type="submit" value="Eviar">
-            <input type="reset" value="Apagar">
-        </p>
     </form>
+<<<<<<< HEAD
 
     <script>
         function calcIano(){
@@ -56,5 +50,7 @@
             iidade.innerHTML = Number(atual) - Number(iano.value)
         } 
     </script>
+=======
+>>>>>>> 522700c561330d545d9a6841c1b43e25efd3af1b
 </body>
 </html>
