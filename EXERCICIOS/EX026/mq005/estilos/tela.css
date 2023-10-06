@@ -4,8 +4,10 @@
     margin: 0;
     padding: 0;
 }
+
 body, html{
-    background-color: lightgray;
+
+    background-color: lightgrey;
 }
 header{
     background-color: rgb(148, 148, 148);
@@ -13,19 +15,18 @@ header{
 header > h1{
     padding: 10px;
     text-align: center;
-} 
+}
 #burguer {
     background-color: rgb(48, 48, 48);
     color: white;
     display: block;
     text-align: center;
     padding: 10px;
-    cursor: pointer;
 }
-
-#burguer:hover {
+#burguer:hover{
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 menu{
     display: none;
@@ -33,53 +34,48 @@ menu{
 menu > ul{
     list-style-type: none;
 }
-menu ul > li > a{
-    display: block;
+
+menu > ul > li > a{
+    text-decoration: none;
+    color: white;
     padding: 10px;
+    border-top: 1px solid gray;
+    display: block;
     text-align: center;
     background-color: rgb(87, 87, 87);
-    color: white;
-    border-top: 2px solid gray;
 }
 menu > ul > li > a:hover{
     background-color: gray;
-    transition: 0.5ms;
 }
 main{
-    width: 90vw;
     background-color: white;
+    width: 90vw;
     margin: auto;
     margin-top: 10px;
-    padding: 10px;
     border-radius: 10px;
+    padding: 10px;
 }
-article > h2{
+article > h2 {
     padding-bottom: 20px;
 }
+
 article > p{
     text-align: justify;
     margin-bottom: 20px;
-    text-indent: 10px;
+    text-indent: 20px;
 }
 footer{
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    margin: auto;
-    width: 100vw;
-    background-color: rgb(148, 148, 148);
     padding: 5px;
+    background-color: gray;
+    text-align: center;
+    margin-top: 10px;
 }
 footer > a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
-footer > a:hover{
-    color: lightslategray;
+footer> a:hover{
     text-decoration: underline;
-    transition: 0.5s;
-}
-::-webkit-scrollbar{
-    bottom: 0;
+    color: lightgrey;
+    transition: .5s;
 }
