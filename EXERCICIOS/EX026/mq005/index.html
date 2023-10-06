@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Query 01</title>
-    <link rel="stylesheet" href="estilos/tela.css" media="screen">
-    <link rel="stylesheet" href="estilos/impreossa.css" media="print">
+    <title>Media Query 05</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
-        <i id="burguer" class="material-icons" onclick="clickmenu()">Menu</i>
+        <i id="burguer" class="materia-icon" onclick="clickMennu()">menu</i>
         <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -25,34 +23,28 @@
     </header>
     <main>
         <article>
-            <h2>Testando Media Query</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque, quibusdam quod quam rem ratione
-                facilis perspiciatis, iste blanditiis iusto officia voluptas, impedit minima. Porro reprehenderit maxime
-                officia optio laborum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit vel
-                expedita dolorem saepe cumque obcaecati, explicabo odit voluptate cum quis dicta ea assumenda magni
-                ipsam a repellat dolore! Doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo,
-                pariatur quam reprehenderit id maxime velit fugit excepturi temporibus commodi enim, iusto fuga magni
-                neque magnam ea eveniet dolores. Iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                iste, autem ad dolore iure asperiores at incidunt corporis eum mollitia deleniti voluptatibus hic
-                placeat illo dicta accusantium possimus, rerum sed?</p>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione a similique recusandae beatae
-                soluta suscipit illo, amet ut laborum ullam tempore cupiditate possimus? Quia unde laboriosam voluptate
-                eos delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum pariatur iusto dolorum
-                obcaecati natus optio adipisci id architecto quis ducimus. Doloremque a incidunt in veniam dolor eius
-                fuga corrupti pariatur?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque, quibusdam quod quam rem ratione
-                facilis perspiciatis, iste blanditiis iusto officia voluptas, impedit minima. Porro reprehenderit maxime
-                officia optio laborum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit vel
-                expedita dolorem saepe cumque obcaecati, explicabo odit voluptate cum quis dicta ea assumenda magni
-                ipsam a repellat dolore! Doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo,
-                pariatur quam reprehenderit id maxime velit fugit excepturi temporibus commodi enim, iusto fuga magni
-                neque magnam ea eveniet dolores. Iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                iste, autem ad dolore iure asperiores at incidunt corporis eum mollitia deleniti voluptatibus hic
-                placeat illo dicta accusantium possimus, rerum sed?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magnam eius vero in id perspiciatis deserunt est voluptas similique, nobis facere ab repellat tempora beatae tempore ex hic ipsam quas?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perspiciatis eos non quaerat ab minus quam sequi sint cupiditate, at impedit quos ipsam quo, quod accusamus! Aliquid minima officiis vero?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aliquid asperiores, eius numquam, repudiandae earum reiciendis eaque animi placeat praesentium explicabo? Ipsum atque placeat totam molestias distinctio fuga quia similique?</p>
         </article>
     </main>
-    <footer>Desevolvido por &reg;<a href="#"><strong>Igor Theodoro</strong></a></footer>
-    <div class="msg"></div>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } 
+            else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMennu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
-
 </html>
