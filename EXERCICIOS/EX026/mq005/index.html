@@ -6,13 +6,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <title>Media Query 05</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-query.css">
 
 </head>
-<body onresize="mudouTamanho()">
+<body>
     <header>
         <h1>Meu Site</h1>
-        <span class="material-symbols-outlined">menu</span>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickmenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -24,27 +24,25 @@
     </header>
     <main>
         <article>
+            <h2>Testando Media Queries</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magnam eius vero in id perspiciatis deserunt est voluptas similique, nobis facere ab repellat tempora beatae tempore ex hic ipsam quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sint reiciendis provident iusto quidem, temporibus debitis, saepe, quia necessitatibus vitae obcaecati! Ab fuga laboriosam optio harum doloribus modi consequuntur accusamus!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perspiciatis eos non quaerat ab minus quam sequi sint cupiditate, at impedit quos ipsam quo, quod accusamus! Aliquid minima officiis vero?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorum nemo ab qui cumque quisquam eveniet id molestiae labore in! Inventore soluta velit cupiditate animi labore nemo dolore doloremque quo?</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aliquid asperiores, eius numquam, repudiandae earum reiciendis eaque animi placeat praesentium explicabo? Ipsum atque placeat totam molestias distinctio fuga quia similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eveniet eum architecto rem a distinctio molestias optio vel, eius totam facilis ipsum? Molestiae officiis nostrum esse magni voluptate necessitatibus inventore.</p>
         </article>
     </main>
     <script>
-        function mudouTamanho(){
-            if (window.innerWidth >= 768){
-                itens.style.display = 'block'
-            } 
-            else {
-                itens.style.display = 'none'
-            }
-        }
-        function clickMennu(){
+        function clickmenu(){
+
             if (itens.style.display == 'block'){
                 itens.style.display = 'none'
+                // Se o estilo do itens estiver recebendo valor 'block', ele vai receber o valor 'none'. Assim toda vez que abrir a página o menu irá ficar escondido
             }
-            else {
+            else
+            {
+                //Se não, ele vai receber o valor de 'block'
                 itens.style.display = 'block'
             }
+            //O tipo de chama vai importar muito, porque estamos chamando a função pelo 'onlclick', ou seja, toda vez que clicarmo no objeto com o id itens, a função ira acontecer
         }
     </script>
 </body>
