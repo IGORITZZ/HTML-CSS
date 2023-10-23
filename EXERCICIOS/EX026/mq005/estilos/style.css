@@ -21,6 +21,7 @@ header > h1 {
     color: white;
     padding: 10px;
     cursor: pointer;
+    user-select: none;
 }
 #burguer:hover{
     background-color: gray;
@@ -39,6 +40,7 @@ menu a{
     background-color: rgb(87, 87, 87);
     color: white;
     border-top: 1px solid gray;
+    user-select: none;
 }
 menu a:hover{
     background-color: gray;
